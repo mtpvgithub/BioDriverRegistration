@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/bg"
+    tools:context="com.mtpv.info.bdv.biodriververification.Person_verification">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="@drawable/header_ver"
+        android:gravity="center">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center|bottom"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/footer"
+            android:scaleType="fitXY"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/header_txt"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_ten"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Personal Verification"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="@dimen/margin_Thirty"
+        android:textColor="@color/black"
+        android:layout_weight="0.1"/>
+
+        <ImageView
+            android:id="@+id/scan_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/scan"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.9"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/header_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/margin_20dp"
+                android:fontFamily="sans-serif"
+                android:layout_weight="0.5"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="@dimen/margin_20dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/fps_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL Number"
+                    android:textSize="@dimen/margin_20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="sans-serif"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="@dimen/margin_20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="License Number"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin_20dp"
+                    android:fontFamily="sans-serif"
+                    android:layout_weight="0.5"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="@dimen/margin_20dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/fps_dlnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DL Number"
+                    android:textSize="@dimen/margin_20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="sans-serif"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="@dimen/margin_20dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Application Number"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin_20dp"
+                    android:fontFamily="sans-serif"
+                    android:layout_weight="0.5"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="@dimen/margin_20dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/fps_appID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Application Number"
+                    android:textSize="@dimen/margin_20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="sans-serif"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="@dimen/margin_20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_5dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please Choose Hand : "
+            android:textStyle="bold"
+            android:textSize="@dimen/margin_Eighteen"
+            android:layout_marginRight="@dimen/margin_ten"
+            android:textColor="@color/black"
+            android:layout_weight="0.5"/>
+
+        <RadioGroup
+            android:id="@+id/rd_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.5"
+            android:weightSum="1">
+
+    <RadioButton
+        android:id="@+id/rd_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left Hand"
+        android:textSize="@dimen/margin_Fourteen"
+        android:layout_weight="0.5"/>
+
+        <RadioButton
+            android:id="@+id/rd_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Right Hand"
+            android:textSize="@dimen/margin_Fourteen"
+            android:layout_weight="0.5"/>
+        </RadioGroup>
+
+        </TableRow>
+
+    <LinearLayout
+        android:id="@+id/llout_finger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/margin_fifteen"
+        android:layout_marginTop="@dimen/margin_ten"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose any One Figaur :"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/margin_Eighteen"/>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_ten"
+            android:weightSum="1">
+
+            <RadioGroup
+                android:id="@+id/rd_checkedfinger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"></RadioGroup>
+
+
+            <RadioButton
+                android:id="@+id/ch_Thumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thumb"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/margin_Fourteen"/>
+
+
+            <RadioButton
+                android:id="@+id/ch_IF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Index finger"
+                android:layout_marginLeft="44dp"
+                android:textSize="@dimen/margin_Fourteen"
+                android:layout_weight="0.5"/>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_ten"
+            android:weightSum="1">
+
+            <RadioButton
+                android:id="@+id/ch_MF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Middle finger"
+                android:textSize="@dimen/margin_Fourteen"
+                android:layout_weight="0.5"/>
+
+            <RadioButton
+                android:id="@+id/ch_RF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ring finger"
+                android:textSize="@dimen/margin_Fourteen"
+                android:layout_weight="0.5"/>
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_ten"
+            android:weightSum="1">
+
+            <RadioButton
+                android:id="@+id/ch_LF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Baby finger"
+                android:layout_weight="0.5" />
+
+        </TableRow>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_Eighteen"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_Thirty">
+
+            <Button
+                android:id="@+id/img_fps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_marginTop="@dimen/margin_Eighteen"
+                android:layout_weight="0.5"
+                android:background="@drawable/buttonstyle"
+                android:padding="@dimen/margin_ten"
+                android:text="Please Capture Finger"
+                android:textColor="@color/white" />
+
+
+            <Button
+                android:id="@+id/final_ftp_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_marginTop="@dimen/margin_Twenty"
+                android:layout_weight="0.5"
+                android:background="@drawable/buttonstyle"
+                android:text="Submit"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+            <Button
+                android:id="@+id/verify_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/buttonstyle"
+                android:text="Verify"
+                android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <ImageView
+            android:id="@+id/web_pdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="left"
+        android:layout_above="@+id/footer">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="@dimen/margin_Forty"
+            android:src="@drawable/back_arrorw" />
+
+    </LinearLayout>
+
+</RelativeLayout>

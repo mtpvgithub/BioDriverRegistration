@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mtpv.info.bdv.biodriververification.MainActivity"
+    tools:ignore="Orientation"
+    android:backgroundTint="@color/bg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Device Name   :"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_weight="0.6" />
+
+            <TextView
+                android:id="@+id/mtvDeviceInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_weight="0.4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:weightSum="1">
+
+
+    <Button
+        android:id="@+id/bt_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BT Scan"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/bt_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="BT Connect"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/fps_capture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FPS Capture"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/fps_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="FPS Verify"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/fps_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next Screen"
+        android:layout_margin="@dimen/margin_Sixteen"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

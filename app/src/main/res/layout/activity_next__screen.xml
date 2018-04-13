@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    tools:context="com.mtpv.info.bdv.biodriververification.Next_ScreenActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_ver"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtx_dlno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titlename"
+            android:textSize="@dimen/margin_Forty"
+            android:textColor="@color/dialog_title"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_ten"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.6"
+                android:text="@string/docname"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <RadioGroup
+                android:id="@+id/rd_yesno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/margin_Twenty"
+                android:layout_weight="0.4"
+                android:weightSum="1">
+
+                <!--style="@style/dd_custom_radio_btn_style"-->
+
+                <RadioButton
+                    android:id="@+id/rd_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_ten"
+                    android:text="Yes"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin_20dp"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:id="@+id/rd_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_ten"
+                    android:text="No"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin_20dp"
+                    android:layout_weight="1"/>
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_Thirty"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/input_otp"
+                style="@style/edt_custom_style_registration"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.5"
+                android:hint="@string/hint_otp"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:text=""
+                android:maxLength="4"
+                android:gravity="center"
+                android:textSize="@dimen/margin_20dp"/>
+
+            <EditText
+                android:id="@+id/input_remark"
+                style="@style/edt_custom_style_registration"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:hint="@string/hint_remark"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="@dimen/margin_20dp"/>
+
+            <Button
+                android:id="@+id/ok_btn"
+                android:layout_width="160dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="@dimen/margin_fifteen"
+                android:layout_weight="0.5"
+                android:background="@color/dd_btn_blue_color"
+                android:text="Ok"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

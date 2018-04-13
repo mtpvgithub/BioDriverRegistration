@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    android:layout_gravity="center"
+    tools:context="com.mtpv.info.bdv.biodriververification.Registration">
+
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center|bottom"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/footer"
+            android:scaleType="fitXY"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_register"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/footer"
+            android:layout_below="@+id/header"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/myLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="50dp">
+
+                    <Button
+                        android:id="@+id/ed_untiname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/buttonstyle"
+                        android:hint="@string/hint_unitname"
+                        android:visibility="gone"/>
+
+                    <EditText
+                        android:id="@+id/ed_psname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/edt_custom_style_registration"
+                        android:hint="@string/hint_PSname"
+                        android:inputType="textCapCharacters"
+                        android:layout_marginTop="10dp"/>
+
+                    <EditText
+                        android:id="@+id/ed_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/edt_custom_style_registration"
+                        android:hint="@string/hint_name"
+                        android:inputType="textCapCharacters"
+                        android:layout_marginTop="@dimen/margin_20dp"/>
+
+                    <EditText
+                        android:id="@+id/ed_gennum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/edt_custom_style_registration"
+                        android:hint="@string/hint_gen_num"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:layout_marginTop="@dimen/margin_20dp"/>
+
+                    <EditText
+                        android:id="@+id/ed_moblienumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/edt_custom_style_registration"
+                        android:hint="@string/hint_contact_num"
+                        android:maxLength="10"
+                        android:inputType="phone"
+                        android:layout_marginTop="@dimen/margin_20dp"/>
+
+                    <EditText
+                        android:id="@+id/ed_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/edt_custom_style_registration"
+                        android:hint="@string/hint_pass"
+                        android:minWidth="4dp"
+                        android:inputType="textPassword"
+                        android:layout_marginTop="@dimen/margin_20dp"/>
+
+                    <EditText
+                        android:id="@+id/ed_conpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/edt_custom_style_registration"
+                        android:hint="@string/hint_con_pass"
+                        android:inputType="textPassword"
+                        android:layout_marginTop="@dimen/margin_20dp"/>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="30dp"
+                        android:padding="20dp"
+                        android:weightSum="1">
+
+                        <Button
+                            android:id="@+id/cancel_btn_reg"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/buttonstyle"
+                            android:gravity="center"
+                            android:text="Cancel"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/margin_20dp" />
+
+                        <Button
+                            android:id="@+id/submit_btn_reg"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/buttonstyle"
+                            android:gravity="center"
+                            android:paddingRight="10dp"
+                            android:text="Submit"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/margin_20dp" />
+
+                    </TableRow>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    tools:context="com.mtpv.info.bdv.biodriververification.MenuBorad">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:background="@color/colorAccent"
+            android:src="@drawable/header_ver"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center|bottom"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/footer"
+            android:scaleType="fitXY"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/footer">
+
+
+
+    <LinearLayout
+        android:id="@+id/myLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fillViewport="true"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titlename"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_Eighteen"
+        android:textSize="@dimen/margin_Thirty"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/txt_title"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_ten"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_weight="0.8"
+            android:gravity="left"
+            android:text="Welcome :"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/margin_20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txt_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_weight="0.2"
+            android:gravity="left"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/margin_20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_fifteen">
+
+            <EditText
+                android:id="@+id/input_applicationID"
+                style="@style/edt_custom_style_registration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/user"
+                android:gravity="center"
+                android:hint="@string/appid_num"
+                android:inputType="number"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/input_aadharnum"
+                style="@style/edt_custom_style_registration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_fifteen"
+                android:gravity="center"
+                android:hint="@string/app_licnum"
+                android:inputType="textCapCharacters"
+                android:drawableLeft="@drawable/lic_card"
+                android:text="" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/docver_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/buttonstyle"
+                    android:text="@string/doc_ver"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/perver_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="@dimen/margin_fifteen"
+                    android:layout_marginRight="@dimen/margin_fifteen"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/buttonstyle"
+                    android:text="@string/per_ver"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:weightSum="1"
+                android:visibility="gone">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drimag_icon"
+                android:layout_weight="0.5"/>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/finger_print_icon"
+                    android:layout_weight="0.5"/>
+
+            </TableRow>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:gravity="left"
+    android:layout_above="@+id/footer">
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="@dimen/margin_Forty"
+        android:src="@drawable/back_arrorw" />
+
+</LinearLayout>
+
+</RelativeLayout>

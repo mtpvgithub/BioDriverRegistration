@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="bg">#ffffff</color>
+
+    <!-- <color name="bg">#58D3F7</color> -->
+    <color name="header_bg">#81BEF7</color>
+    <color name="orange_color">#FFBF00</color>
+    <color name="dd_btn_blue_color">#58ACFA</color>
+    <color name="navi_color">#001e59</color>
+    <color name="footer_txt_color">#374175</color>
+    <color name="dialog_title">#fb0000</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="yellow1">#FFFF00</color>
+    <color name="yellow2">#00868B</color>
+    <color name="grey05">#00868B</color>
+    <color name="orange4">#FFA500</color>
+    <color name="blue2">#05E9FF</color>
+    <color name="blue25">#00868B</color>
+    <color name="orange5">#000080</color>
+    <color name="semitransparent_white">#000000</color>
+    <color name="amber">#FFC107</color>
+
+    <color name="lightgreen">  #33691E</color>
+
+    <color name="indigo">#00897B</color>
+</resources>

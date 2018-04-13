@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">BioDriverVerification</string>
+
+    <!--Welcom screen-->
+    <string name="registr">New User</string>
+    <string name="login">Log in</string>
+    <!--Welcome END-->
+
+    <string name="actDiscovery_bond_bonded">Bonded</string>
+    <string name="actDiscovery_bond_nothing">Nothing</string>
+
+    <string name="actDiscovery_msg_select_device">Select the device you need to connect</string>
+    <string name="actDiscovery_msg_not_find_device">Devices not found</string>
+
+
+    <string name="device_type_bredr">BR/EDR Bluetooth</string>
+    <string name="device_type_ble">Low Energy Bluetooth</string>
+    <string name="device_type_dumo">Duplex mode Bluetooth</string>
+
+    <string name="actDiscovery_msg_scaning_device">Scanning for Bluetooth Devices, Please wait&#8230;</string>
+    <string name="actDiscovery_msg_bluetooth_not_start">Bluetooth is not enabled</string>
+
+    <string name="actMain_msg_device_connecting">Please Wait Connecting device&#8230;</string>
+    <string name="actMain_msg_device_connect_succes">Successful connection</string>
+
+    <string name="radio_9600">9600</string>
+    <string name="radio_11520">115200</string>
+    <string name="ibc">IBC</string>
+
+    <string name="actMain_device_info">%1$s</string>
+
+
+    <!--Register screen-->
+    <string name="txt_register">Registration</string>
+    <string name="hint_unitname">Select Unti Code</string>
+    <string name="hint_PSname">Ps Name</string>
+    <string name="hint_name">Officer Name</string>
+    <string name="hint_gen_num">Enter General Number</string>
+    <string name="hint_contact_num">Contact Number</string>
+    <string name="hint_pass">Password</string>
+    <string name="hint_con_pass">Confirm Password</string>
+    <!--end-->
+
+    <!-- FOR REGISTRATION EDITTEXT STYLE -->
+    <style name="edt_custom_style_registration">
+        <item name="android:background">@drawable/transbg_white_style</item>
+        <item name="android:textColorHint">#585858</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/margin_Eighteen</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:inputType">textCapCharacters</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!--menu board screen-->
+    <string name="appid_num">Enter Application ID</string>
+    <string name="app_licnum">Enter License Number</string>
+    <string name="doc_ver">Document Verification</string>
+    <string name="per_ver">Person Verification</string>
+    <!--end-->
+
+    <string name="titlename">Driver Verification</string>
+
+    <style name="layt_style" parent="Theme.AppCompat.Light">
+        <item name="contentPaddingLeft">@dimen/margin_20dp</item>
+        <item name="contentPaddingRight">@dimen/margin_20dp</item>
+
+
+    </style>
+    <!--licences card string-->
+
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+
+    <string name="rc_details">REGISTRATION OF CERTIFICATE DETAILS</string>
+    <string name="tsp">TELANGANA STATE POLICE</string>
+    <string name="vehicleNo_txt">Regn. Number </string>
+    <string name="Ccapsity_txt">Cubic Capacity </string>
+
+    <!--title names end -->
+    <string name="docname">Document Verification         :</string>
+
+    <string name="radioyes">Apporval</string>
+    <string name="radiono">Reject</string>
+    <string name="hint_remark">Remarks</string>
+    <string name="hint_otp">Enter OTP</string>
+
+    <string name="hint_submit">Submit</string>
+    <string name="hint_cancel">Cancel</string>
+    <string name="txt_regn"><u>New Registration?</u></string>
+
+
+
+</resources>
